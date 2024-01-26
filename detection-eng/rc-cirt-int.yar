@@ -9,7 +9,7 @@ rule rc-scenario1
 		$s1 = "http://bit.ly/e0Mw9w" // Wrote it this way as link is static to leeholmes.com
 
 	condition:
-		$s1
+		all of them
 }
 
 rule rc-scenario2
@@ -21,6 +21,9 @@ rule rc-scenario2
 
 	strings:
 		$rc2 = "UI0Detect.exe" // would need more data to make this more specific to this threat.
+
+	condition:
+		all of them
 }
 
 rule rc-scenario3
@@ -67,4 +70,6 @@ rule rc-scenario5
 		/*
 		Fairly weak detection but works for this scenario due to lack of data. As it is a known hash, it is unlikely to be used by other malware.
 		*/
+	condition:
+		all of them
 }
