@@ -1,4 +1,4 @@
-rule rcs_scenario1
+rule rc_scenario1
 {
 	meta:
 		description = "Rule for detecting the first scenario of the RC-DE interview"
@@ -34,7 +34,7 @@ rule rc_scenario3
 		in_the_wild = false
 
 	strings:
-		$rc3 = "totes-evil.sh" //
+		$rc3 = "totes-evil.sh" //Found within telemtry data so is a fairly unique string.
 		$rc3_1 = "atomic.log" //decoded from base64
 	
 	condition:
