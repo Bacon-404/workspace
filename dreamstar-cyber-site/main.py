@@ -6,21 +6,21 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/interest-areas')
-def interest_areas():
-    return render_template('interest-areas.html')
+@app.route('/welcome')
+def welcome():
+    return render_template('Welcome to Dreamstar Cyber!')
 
-@app.route('/interest-areas/sysadmin')
+@app.route('sysadmin')
 def sysadmin():
-    return 'Welcome to the Sysadmin page!'
+    return render_template('Welcome to the Sysadmin page!')
 
-@app.route('/interest-areas/cybersecurity')
+@app.route('cybersecurity')
 def cybersecurity():
-    return 'Welcome to the Cybersecurity page!'
+    return render_template('Welcome to the Cybersecurity page!')
 
-@app.route('/interest-areas/detection_engineering')
+@app.route('/detection_engineering')
 def detection_engineering():
-    return 'Welcome to the Detection Engineering page!'
+    return render_template('Welcome to the Detection Engineering page!')
 
 if __name__ == '__main__':
     app.run()
