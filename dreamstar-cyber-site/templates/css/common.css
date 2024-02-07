@@ -1,0 +1,27 @@
+body {
+    background-color: #333333;
+}
+
+h1, h2, h3 {
+    color: #ffa500;
+    text-shadow: 0 0 2px #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.navbar {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+.navbar a {
+    margin-left: 10px; /* Adjust spacing between links */
+    text-decoration: none;
+}
